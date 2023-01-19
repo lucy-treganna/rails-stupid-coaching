@@ -1,0 +1,20 @@
+<div class="container pt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-4">
+      <div class="row mb-3">
+      <h1>Stupid Coaching</h1>
+      </div>
+        <div class="row left-border mb-3" id="user-question">
+          <p><%= @question.capitalize %></p>
+          <p>-<i>You</i></p>
+        </div>
+        <div class="row left-border mb-3" id="coach-answer">
+          <p><%= @answer %></p>
+          <p>-<i>Your coach</i></p>
+        </div>
+        <div class="row">
+          <%= link_to "Ask a new question", ask_path, class: "new-question" %>
+        </div>
+    </div>
+  </div>
+</div>
